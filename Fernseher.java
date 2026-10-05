@@ -5,6 +5,19 @@ public class Fernseher
     private int zoll;
     private boolean smartTv;
     
+    public Fernseher()
+    {
+        setHersteller("UNKN");
+        setZoll(0);
+        setSmartTv(false);
+    }
+    public Fernseher(String newHersteller, int newZoll, boolean newSmartTv)
+    {
+        setHersteller(newHersteller);
+        setZoll(newZoll);
+        setSmartTv(newSmartTv);
+    }
+    
     // getMethod
     public String getHersteller()
     {
