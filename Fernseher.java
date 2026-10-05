@@ -5,6 +5,7 @@ public class Fernseher
     private int zoll;
     private boolean smartTv;
     
+    // constructor
     public Fernseher()
     {
         setHersteller("UNKN");
@@ -44,5 +45,11 @@ public class Fernseher
     public void setSmartTv(boolean newSmartTv)
     {
         smartTv = newSmartTv;
+    }
+    
+    // print method
+    public void printFernseher()
+    {
+        System.out.println("Fernseher: Hersteller = " + hersteller + ", Zoll = " + zoll + ", SmartTV = " + smartTv);
     }
 }
