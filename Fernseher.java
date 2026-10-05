@@ -19,4 +19,17 @@ public class Fernseher
         return smartTv;
     }
     
+    // setMethod
+    public void setHersteller(String newHersteller)
+    {
+        hersteller = newHersteller;
+    }
+    public void setZoll(int newZoll)
+    {
+        zoll = newZoll;
+    }
+    public void setSmartTv(boolean newSmartTv)
+    {
+        smartTv = newSmartTv;
+    }
 }
