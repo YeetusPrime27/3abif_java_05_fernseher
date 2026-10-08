@@ -40,7 +40,15 @@ public class Fernseher
     }
     public void setZoll(int newZoll)
     {
-        zoll = newZoll;
+        if ((newZoll >= 20) && (newZoll <= 120))
+        {
+            zoll = newZoll;
+        }
+        else
+        {
+            System.out.println("Zoll Größe ungültig");
+            newZoll = 20;
+        }
     }
     public void setSmartTv(boolean newSmartTv)
     {
