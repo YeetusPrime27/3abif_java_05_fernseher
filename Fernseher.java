@@ -47,7 +47,7 @@ public class Fernseher
         else
         {
             System.out.println("Zoll Größe ungültig");
-            newZoll = 20;
+            zoll = 20;
         }
     }
     public void setSmartTv(boolean newSmartTv)
