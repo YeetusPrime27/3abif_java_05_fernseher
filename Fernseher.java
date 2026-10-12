@@ -6,18 +6,31 @@ public class Fernseher
     private boolean smartTv;
     
     // constructor
+    public Fernseher(String hersteller, int zoll, boolean smartTv)
+    {
+        setHersteller(hersteller);
+        setZoll(zoll);
+        setSmartTv(smartTv);
+    }
+    public Fernseher(String hersteller, int zoll)
+    {
+        setHersteller(hersteller);
+        setZoll(zoll);
+        setSmartTv(false);
+    }
+    public Fernseher(String hersteller)
+    {
+        setHersteller(hersteller);
+        setZoll(0);
+        setSmartTv(false);
+    }
     public Fernseher()
     {
         setHersteller("UNKN");
         setZoll(0);
         setSmartTv(false);
     }
-    public Fernseher(String newHersteller, int newZoll, boolean newSmartTv)
-    {
-        setHersteller(newHersteller);
-        setZoll(newZoll);
-        setSmartTv(newSmartTv);
-    }
+
     
     // getMethod
     public String getHersteller()
@@ -34,25 +47,25 @@ public class Fernseher
     }
     
     // setMethod
-    public void setHersteller(String newHersteller)
+    public void setHersteller(String hersteller)
     {
-        hersteller = newHersteller;
+        this.hersteller = hersteller;
     }
-    public void setZoll(int newZoll)
+    public void setZoll(int zoll)
     {
-        if ((newZoll >= 20) && (newZoll <= 120))
+        if ((zoll >= 20) && (zoll <= 120))
         {
-            zoll = newZoll;
+            this.zoll = zoll;
         }
         else
         {
             System.out.println("Zoll Größe ungültig");
-            zoll = 20;
+            this.zoll = 20;
         }
     }
-    public void setSmartTv(boolean newSmartTv)
+    public void setSmartTv(boolean smartTv)
     {
-        smartTv = newSmartTv;
+        this.smartTv = smartTv;
     }
     
     // print method
