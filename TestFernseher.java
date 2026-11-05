@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class TestFernseher
 {
+    // Test for zoll
     @Test
     // Zoll = 15 | false
     public void testFernseher_zoll_klein()
@@ -40,4 +41,5 @@ public class TestFernseher
         f.printFernseher();
         assertEquals(20, f.getZoll());
     }
+    
 }

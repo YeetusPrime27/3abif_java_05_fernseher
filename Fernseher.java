@@ -46,6 +46,14 @@ public class Fernseher
         return smartTv;
     }
     
+    public String getLand()
+    {
+        int pos;
+        
+        pos = hersteller.indexOf(" ");
+        return hersteller.substring(0,pos);
+    }
+    
     // setMethod
     public void setHersteller(String hersteller)
     {
